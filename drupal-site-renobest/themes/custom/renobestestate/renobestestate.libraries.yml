@@ -1,0 +1,5 @@
+global-styling:
+  css:
+    theme:
+      css/e1.css: {}
+      css/e2.css: {}
