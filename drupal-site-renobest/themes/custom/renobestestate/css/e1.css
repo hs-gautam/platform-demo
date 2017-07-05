@@ -104,6 +104,7 @@ section#block-footerblock2 {
 }
 /* requirement is to set bottom 210 after every content */
 .content {
+    margin-bottom: 74px;
     margin-bottom: 210px;
 }
 /* Media css */
