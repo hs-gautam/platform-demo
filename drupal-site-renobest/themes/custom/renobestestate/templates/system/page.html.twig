@@ -108,9 +108,9 @@
 {# Banner #}
   {% if page.banner %}
     {% block banner %}
-      <div class="col-sm-12" role="heading">
+      <div class="row">
         {{ page.banner }}
-        {{ drupal_title() }}
+        <div class="banner-page-title">{{ drupal_title() }}</div>
       </div>
     {% endblock %}
 {% endif %}
