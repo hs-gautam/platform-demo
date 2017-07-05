@@ -104,6 +104,7 @@ section#block-footerblock2 {
 }
 /* Media css */
 @media (min-width: 768px) {
-.container { max-width: 750px;
+.container {
+  max-width: 950px;
 }
 }
