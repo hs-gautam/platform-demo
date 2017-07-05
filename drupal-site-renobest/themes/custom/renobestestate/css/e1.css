@@ -102,6 +102,10 @@ section#block-facebook .field.field--name-body img {
 section#block-footerblock2 {
     float: right;
 }
+/* requirement is to set bottom 210 after every content */
+.content {
+    margin-bottom: 210px;
+}
 /* Media css */
 @media (min-width: 768px) {
 .container {
