@@ -105,6 +105,15 @@
   {% endblock %}
 {% endif %}
 
+{# Banner #}
+  {% if page.header %}
+    {% block header %}
+      <div class="col-sm-12" role="heading">
+        {{ page.header }}
+      </div>
+    {% endblock %}
+{% endif %}
+
 {# Main #}
 {% block main %}
   <div role="main" class="main-container {{ container }} js-quickedit-main-content">
