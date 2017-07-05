@@ -2,6 +2,10 @@
  * Place your custom styles here.
  */
 /* Following code is added by Tanmay */
+.padding-none {
+  padding-left: 0;
+  padding-right: 0;
+}
 /* code for hamburgermenu */
   .navbar-header {
        float: none;
@@ -103,7 +107,7 @@ section#block-footerblock2 {
     float: right;
 }
 /* requirement is to set bottom 210 after every content */
-.content {
+.region-content {
     margin-top: 74px;
     margin-bottom: 210px;
 }
