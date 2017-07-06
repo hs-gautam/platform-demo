@@ -41,16 +41,3 @@ if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
-
-// SOLR
-$relationships = getenv("PLATFORM_RELATIONSHIPS");
-if (!$relationships) {
-  return;
-}
-
-$relationships = json_decode(base64_decode($relationships), TRUE);
-
-foreach ($relationships['solr'] as $endpoint) {
-  $container->setParameter('solr_host', $endpoint['host']);
-  $container->setParameter('solr_port', $endpoint['port']);
-}
