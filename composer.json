@@ -30,7 +30,11 @@
         "drupal/devel": "^1.0@RC",
         "drupal/responsive_menu": "^2.4",
         "drupal/superfish": "^1.1",
-        "drupal/bootstrap": "^3.5"
+        "drupal/bootstrap": "^3.5",
+        "drupal/search_api_solr": "^1.0",
+        "drupal/facets": "^1.0@alpha",
+        "drupal/search_api_solr_multilingual": "^1.0@beta",
+        "drupal/search_api_page": "^1.0@alpha"
     },
     "repositories": [
         {
