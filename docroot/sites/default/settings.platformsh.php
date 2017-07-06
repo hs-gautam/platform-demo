@@ -110,3 +110,16 @@ if (isset($_ENV['PLATFORM_PROJECT_ENTROPY']) && empty($settings['hash_salt'])) {
 if (isset($_ENV['PLATFORM_TREE_ID']) && empty($settings['deployment_identifier'])) {
   $settings['deployment_identifier'] = $_ENV['PLATFORM_TREE_ID'];
 }
+
+// SOLR
+$relationships = getenv("PLATFORM_RELATIONSHIPS");
+if (!$relationships) {
+  return;
+}
+
+$relationships = json_decode(base64_decode($relationships), TRUE);
+
+foreach ($relationships['solr'] as $endpoint) {
+  $container->setParameter('solr_host', $endpoint['host']);
+  $container->setParameter('solr_port', $endpoint['port']);
+}
